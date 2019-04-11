@@ -36,8 +36,6 @@ let app = new Vue({
         let watchId = 0;
 
         if ('geolocation' in navigator) {
-            navigator.geolocation.getCurrentPosition(savePosition);
-        
             watchId = navigator.geolocation.watchPosition(savePosition);
         }
 
