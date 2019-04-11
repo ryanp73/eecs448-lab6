@@ -12,11 +12,11 @@
         </head>
         <body>
             <div class="container">
-                <div id="app" class="jumbotron">
+                <div id="app">
                     Number of Stop to Show: <input id="numStops" type="number" v-model="numStops">
                     <div class="stops">
                         <div class="card" v-for="stop in filteredStops">
-                            <div class="card-body">
+                            <div class="card-body" style="width: 18rem;">
                                 <h3 class="card-title">{{ stop.name }}</h3>
                                 <p class="card-text">{{ stop.description }}</p>
                                 <p class="card-text">Distance: {{ stop.distance }}mi</p>
